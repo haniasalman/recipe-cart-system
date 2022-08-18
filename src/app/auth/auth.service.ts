@@ -95,15 +95,15 @@ export class AuthService {
   //   }
   // }
 
-  // logout() {
-  // this.user.next(null);
-  // this.router.navigate(['/auth']);
-  // localStorage.removeItem('userData');
-  // if (this.tokenExpirationTimer) {
-  //   clearTimeout(this.tokenExpirationTimer);
-  // }
-  // this.tokenExpirationTimer = null;
-  // }
+  logout() {
+    this.user.next(null);
+    this.router.navigate(['/auth']);
+    // localStorage.removeItem('userData');
+    // if (this.tokenExpirationTimer) {
+    //   clearTimeout(this.tokenExpirationTimer);
+    // }
+    // this.tokenExpirationTimer = null;
+  }
 
   // autoLogout(expirationDuration: number) {
   //   this.tokenExpirationTimer = setTimeout(() => {
