@@ -15,6 +15,8 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       { path: '', component: RecipeStartComponent },
+      //the dynamic paths should be written at the end and absolute paths should be written first else error
+      //occurs as it first checks the dynamic value and wont load the absolute path page
       { path: 'new', component: RecipeEditComponent },
       {
         path: ':id',
