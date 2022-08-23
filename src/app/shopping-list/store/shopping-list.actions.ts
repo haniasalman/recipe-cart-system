@@ -1,6 +1,5 @@
 import { Action } from '@ngrx/store';
-
-import { Ingredient } from '../../shared/ingredient.model';
+import { Ingredient } from 'src/app/shared/ingredient.modal';
 
 export const ADD_INGREDIENT = 'ADD_INGREDIENT';
 export const ADD_INGREDIENTS = 'ADD_INGREDIENTS';
@@ -24,7 +23,7 @@ export class AddIngredients implements Action {
 export class UpdateIngredient implements Action {
   readonly type = UPDATE_INGREDIENT;
 
-  constructor(public payload: Ingredient ) {}
+  constructor(public payload: Ingredient) {}
 }
 
 export class DeleteIngredient implements Action {
