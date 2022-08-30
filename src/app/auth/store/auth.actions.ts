@@ -29,7 +29,7 @@ export class Logout implements Action {
 export class LoginStart implements Action {
   readonly type = LOGIN_START;
 
-  constructor(public payload: { email: string; password: string }) {}
+  constructor(public payload: { email: string; password: string }) {} //payload to define what is being sent with the action
 }
 
 export class AuthenticateFail implements Action {
