@@ -63,7 +63,7 @@ export class AuthEffects {
     switchMap((signupAction: AuthActions.SignupStart) => {
       return this.http
         .post<AuthResponseData>(
-          'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyDysgoO3JXz9WlkECbZ82aI1FoZV8CFkxM',
+          'YOUR_GOOGLE_API_URL',
           {
             email: signupAction.payload.email,
             password: signupAction.payload.password,
